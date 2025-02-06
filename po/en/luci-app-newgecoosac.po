@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-newgecoosac 1.0\n"
+"POT-Creation-Date: 2025-02-07 12:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "New Gecoos AC"
+msgstr "New Gecoos AC"
+
+msgid "Batch management Gecoos AP,Default password:admin"
+msgstr "Batch management Gecoos AP,Default password:admin"
+
+msgid "The AC program does not exist, please check."
+msgstr "The AC program does not exist, please check."
+
+msgid "Global Settings"
+msgstr "Global Settings"
+
+msgid "Enabled AC"
+msgstr "Enabled AC"
+
+msgid "Program Path"
+msgstr "Program Path"
+
+msgid "/usr/bin/newgecoosac"
+msgstr "/usr/bin/newgecoosac"
+
+msgid "Set interface port"
+msgstr "Set interface port"
+
+msgid "Data Directory"
+msgstr "Data Directory"
+
+msgid "/etc/newgecoosac/"
+msgstr "/etc/newgecoosac/"
+
+msgid "Error Log"
+msgstr "Error Log"
+
+msgid "/var/log/newgecoosac.log"
+msgstr "/var/log/newgecoosac.log"
+
+msgid "Upload File"
+msgstr "Upload File"
+
+msgid "Upload AP upgrade firmware"
+msgstr "Upload AP upgrade firmware"
+
+msgid "Running Parameters"
+msgstr "Running Parameters"
+
+msgid "Enter additional running parameters"
+msgstr "Enter additional running parameters"

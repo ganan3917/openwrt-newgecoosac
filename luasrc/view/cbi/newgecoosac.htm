@@ -1,0 +1,17 @@
+<%+header%>
+<link rel="stylesheet" href="/luci-static/css/newgecoosac.css">
+<div class="cbi-page-container">
+    <h1><%:New Gecoos AC%></h1>
+    <% if msg then %>
+        <div class="cbi-message"><%=msg%></div>
+    <% end %>
+    <div class="cbi-form-container">
+        <%+cbi/tvalue%>
+        <%+cbi/value%>
+        <%+cbi/flag%>
+        <%+cbi/button%>
+        <%+cbi/fileupload%>
+    </div>
+</div>
+<script src="/luci-static/js/newgecoosac.js"></script>
+<%+footer%>

@@ -1,0 +1,70 @@
+/* 页面容器样式 */
+.cbi-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 标题样式 */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 消息提示样式 */
+.cbi-message {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+/* 表单容器样式 */
+.cbi-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+/* 表单元素样式 */
+.cbi-value {
+    margin-bottom: 15px;
+}
+
+.cbi-value label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.cbi-value input[type="text"],
+.cbi-value input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.cbi-value input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.cbi-button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cbi-button:hover {
+    background-color: #0056b3;
+}

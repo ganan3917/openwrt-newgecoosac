@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-newgecoosac 1.0\n"
+"POT-Creation-Date: 2025-02-07 12:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "New Gecoos AC"
+msgstr "新集客AC"
+
+msgid "Batch management Gecoos AP,Default password:admin"
+msgstr "批量管理集客AP，默认密码：admin"
+
+msgid "The AC program does not exist, please check."
+msgstr "AC程序不存在，请检查。"
+
+msgid "Global Settings"
+msgstr "全局设置"
+
+msgid "Enabled AC"
+msgstr "启用AC"
+
+msgid "Program Path"
+msgstr "程序路径"
+
+msgid "/usr/bin/newgecoosac"
+msgstr "/usr/bin/newgecoosac"
+
+msgid "Set interface port"
+msgstr "设置接口端口"
+
+msgid "Data Directory"
+msgstr "数据目录"
+
+msgid "/etc/newgecoosac/"
+msgstr "/etc/newgecoosac/"
+
+msgid "Error Log"
+msgstr "错误日志"
+
+msgid "/var/log/newgecoosac.log"
+msgstr "/var/log/newgecoosac.log"
+
+msgid "Upload File"
+msgstr "上传文件"
+
+msgid "Upload AP upgrade firmware"
+msgstr "上传AP升级固件"
+
+msgid "Running Parameters"
+msgstr "运行参数"
+
+msgid "Enter additional running parameters"
+msgstr "输入额外的运行参数"

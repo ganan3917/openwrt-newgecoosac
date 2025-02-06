@@ -1,0 +1,11 @@
+{
+    "luci-app-newgecoosac": {
+        "description": "Grant UCI access for luci-app-newgecoosac",
+        "read": {
+            "uci": [ "newgecoosac" ]
+        },
+        "write": {
+            "uci": [ "newgecoosac" ]
+        }
+    }
+}
