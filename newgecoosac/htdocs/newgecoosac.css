@@ -1,11 +1,12 @@
 /* 页面容器样式 */
 .cbi-page-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 标题样式 */
@@ -13,6 +14,7 @@ h1 {
     color: #333;
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* 消息提示样式 */
@@ -23,14 +25,20 @@ h1 {
     color: #155724;
     border: 1px solid #c3e6cb;
     border-radius: 5px;
+    text-align: center;
 }
 
-/* 表单容器样式 */
-.cbi-form-container {
+/* 表单样式 */
+.cbi-form {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 5px;
+}
+
+/* 表单部分样式 */
+.cbi-section {
+    margin-bottom: 20px;
 }
 
 /* 表单元素样式 */
@@ -42,20 +50,24 @@ h1 {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #555;
 }
 
 .cbi-value input[type="text"],
-.cbi-value input[type="number"] {
+.cbi-value input[type="number"],
+.cbi-value input[type="file"] {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .cbi-value input[type="checkbox"] {
     margin-right: 5px;
 }
 
+/* 按钮样式 */
 .cbi-button {
     padding: 8px 15px;
     background-color: #007bff;
@@ -63,8 +75,21 @@ h1 {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .cbi-button:hover {
     background-color: #0056b3;
+}
+
+.cbi-button-save {
+    margin-right: 10px;
+}
+
+.cbi-button-reset {
+    background-color: #6c757d;
+}
+
+.cbi-button-reset:hover {
+    background-color: #5a6268;
 }

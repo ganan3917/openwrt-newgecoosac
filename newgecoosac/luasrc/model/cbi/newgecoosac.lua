@@ -1,10 +1,15 @@
 function program_exists(program)
     local handle = io.popen('which ' .. program)
+    if not handle then
+        -- 处理打开失败的情况
+        return false
+    end
     local result = handle:read('*a')
     handle:close()
     return result ~= ''
 end
 
+local m
 if program_exists("/usr/bin/newgecoosac") then
     m = Map("newgecoosac", translate("New Gecoos AC"), translate("Batch management Gecoos AP,Default password:admin"))
 else
@@ -13,16 +18,16 @@ end
 
 m:section(SimpleSection).template  = "newgecoosac/newgecoosac_status"
 
-s = m:section(TypedSection, "newgecoosac", translate("Global Settings"))
+local s = m:section(TypedSection, "newgecoosac", translate("Global Settings"))
 s.addremove = false
 s.anonymous = true
 
 -- 启用开关
-enable = s:option(Flag, "enabled", translate("Enabled AC"))
+local enable = s:option(Flag, "enabled", translate("Enabled AC"))
 enable.rmempty = false
 
 -- 程序路径
-o = s:option(Value, "program_path", translate("Program Path"))
+local o = s:option(Value, "program_path", translate("Program Path"))
 o.placeholder = translate("/usr/bin/newgecoosac")
 o.default = "/usr/bin/newgecoosac"
 o.rmempty = false
@@ -47,7 +52,7 @@ o.default = "/var/log/newgecoosac.log"
 o.rmempty = false
 
 -- 上传按钮
-upload = s:option(FileUpload, "upload", translate("Upload File"))
+local upload = s:option(FileUpload, "upload", translate("Upload File"))
 upload.title = translate("Upload File")
 upload.description = translate("Upload AP upgrade firmware")
 

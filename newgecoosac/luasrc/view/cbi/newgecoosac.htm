@@ -5,13 +5,19 @@
     <% if msg then %>
         <div class="cbi-message"><%=msg%></div>
     <% end %>
-    <div class="cbi-form-container">
-        <%+cbi/tvalue%>
-        <%+cbi/value%>
-        <%+cbi/flag%>
-        <%+cbi/button%>
-        <%+cbi/fileupload%>
-    </div>
+    <form class="cbi-form" method="post" action="">
+        <div class="cbi-section">
+            <%+cbi/tvalue%>
+            <%+cbi/value%>
+            <%+cbi/flag%>
+            <%+cbi/button%>
+            <%+cbi/fileupload%>
+        </div>
+        <div class="cbi-buttons">
+            <input type="submit" value="保存设置" class="cbi-button cbi-button-save">
+            <input type="reset" value="重置" class="cbi-button cbi-button-reset">
+        </div>
+    </form>
 </div>
 <script src="/luci-static/js/newgecoosac.js"></script>
 <%+footer%>

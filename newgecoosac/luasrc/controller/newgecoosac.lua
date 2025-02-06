@@ -1,7 +1,11 @@
-module("luci.controller.newgecoosac", package.seeall)
+local fs = require "nixio.fs"
+local sys = require "luci.sys"
+local http = require "luci.http"
 
-function index()
-    if not nixio.fs.access("/etc/config/newgecoosac") then
+local M = {}
+
+function M.index()
+    if not fs.access("/etc/config/newgecoosac") then
         return
     end
 
@@ -12,12 +16,18 @@ function index()
     page.leaf = true
 end
 
-function act_status()
+function M.act_status()
     local e = {}
-    local binpath = luci.sys.exec("uci get newgecoosac.@newgecoosac[0].program_path")
-    e = {
-        running = luci.sys.call("pgrep " .. binpath .. " >/dev/null") == 0
-    }
-    luci.http.prepare_content("application/json")
-    luci.http.write_json(e)
+    local binpath = sys.exec("uci get newgecoosac.@newgecoosac[0].program_path")
+    if binpath then
+        e = {
+            running = sys.call("pgrep " .. binpath .. " >/dev/null") == 0
+        }
+    else
+        e = { running = false }
+    end
+    http.prepare_content("application/json")
+    http.write_json(e)
 end
+
+return M
